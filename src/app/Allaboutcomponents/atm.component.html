@@ -1,0 +1,9 @@
+<p>atm works!</p>
+Enter Amount <input type="number" [(ngModel)]="amt"/><br><br>
+
+<button (click)="withdraw()">Withdraw</button> &nbsp;&nbsp;
+<button (click)="deposit()">Deposit</button>
+<hr>
+<div *ngIf="flag">{{error}}</div>
+
+{{tr}} &nbsp; Balace is {{bal}}

@@ -1,0 +1,17 @@
+<div>
+    {{title}}
+    <h2> Using one way binding</h2>
+    <input [ngModel] ="ename"/><br>
+    Name : {{ename}}<br>
+    <hr>
+   <input [value]="ename"/><br>
+   Name : {{ename}} <br>
+   <hr>
+    <h2>Using two way data binding </h2>
+    Enter Employee Name :<input type="text" [(ngModel)]="ename" /><br>     
+    Name : {{ename}} <br>
+     <h3> Even Handling </h3>
+    <button (click)="showMsg()"> Greet</button><br>
+    {{msg}}
+
+</div>
