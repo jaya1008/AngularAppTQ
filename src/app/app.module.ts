@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AtmComponent } from './Allaboutcomponents/atm.component';
 import { LoginComponent } from './Allaboutcomponents/Login.component';
 import { ProductComponentNew } from './Allaboutcomponents/productnew.component';
@@ -22,16 +22,24 @@ import {DemoAttrComponents} from './directivedemos/attrdemo/attrdemo.component'
 import {TestPipes} from './DemoPipes/testpipes'
 import { ExponentialStrengthPipe } from './DemoPipes/ExponentialStrengthPipe';
 import { HighlightDirective } from './directivedemos/CusrAttrDemo/highlight.directive';
+import { AddChildComponent } from './outputdecorator/addchild.component';
+import {AddsimpleComponent} from './outputdecorator/addparent.component';
+import { ConatctFormComponent } from './FormsDemos/contact.component';
+import { ModelContactComponent } from './FormsDemos/modelContact.component';
+import { ValidFormComponent } from './FormsDemos/validForm.component';
+import { PersonComponent } from './FormsDemos/Person.component';
 @NgModule({
   declarations: [
     AppComponent,AtmComponent,LoginComponent,ProductComponentNew,StudentComponent
     ,DemoBindingsComponent,MsgComponent,DemoTwoWayComponent,
     SampleComponent,TestComponent,TheIfComponent,SimplecurdProduct,EmployeeListComponent,
-    FilterPipe,TheSwitchComponent,DemoAttrComponents,HighlightDirective,TestPipes,ExponentialStrengthPipe
+    FilterPipe,TheSwitchComponent,DemoAttrComponents,HighlightDirective,TestPipes,
+    ExponentialStrengthPipe,MsgComponent,AddChildComponent,AddsimpleComponent,
+    ConatctFormComponent,ModelContactComponent,ValidFormComponent,PersonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

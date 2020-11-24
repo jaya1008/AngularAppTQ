@@ -1,8 +1,16 @@
-{{title}}
-<h4>{{title}}Property Binding- Element Property Binding, One way binding
+
+<h4>{{title}}Property Binding- Element Property Binding, One way binding ,@Input
+    
+    <p>Now observe Component property binding</p>
+
+    <br/><my-msg  prefixMsg= "Website name is " [siteName] = "website.name"> </my-msg> 
+    
+    <br/><my-msg  prefixMsg= " Google " bind-siteName = "website.name"> </my-msg>
+    
+    <br/><my-msg  prefixMsg= " FaceBook " siteName = "{{website.name}}"> </my-msg> 
 
 </h4>
-Logo: <img [src]="website.logo"/>
+<!-- Logo: <img [src]="website.logo"/>
 
 <br/>Logo: <img bind-src="website.logo"/>
 
@@ -25,15 +33,10 @@ Logo: <img [src]="website.logo"/>
 <br/><button [disabled]="!flag">Submit</button>
 
 <br/><button bind-disabled="!flag">Submit</button>
+ -->
 
 
-<!-- <p>Now observe Component property binding</p>
-<br/><my-msg  prefixMsg= "Website name is " [siteName] = "website.name"> </my-msg> 
 
-<br/><my-msg  prefixMsg= "Website name is " bind-siteName = "website.name"> </my-msg>
-
-<br/><my-msg  prefixMsg= "Website name is " siteName = "{{website.name}}"> </my-msg> 
--->
 <!-- <p>Now observe Directive Property Biinding</p>
 <p [ngClass]="'one two'"> Angular Directive Property Binding Example </p>
 
