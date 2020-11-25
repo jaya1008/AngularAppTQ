@@ -28,6 +28,8 @@ import { ConatctFormComponent } from './FormsDemos/contact.component';
 import { ModelContactComponent } from './FormsDemos/modelContact.component';
 import { ValidFormComponent } from './FormsDemos/validForm.component';
 import { PersonComponent } from './FormsDemos/Person.component';
+import { CustomValidatorComp } from './FormsDemos/CustomValidator/customvalid.component';
+import { HelloService } from './Services/Hello.service';
 @NgModule({
   declarations: [
     AppComponent,AtmComponent,LoginComponent,ProductComponentNew,StudentComponent
@@ -35,7 +37,8 @@ import { PersonComponent } from './FormsDemos/Person.component';
     SampleComponent,TestComponent,TheIfComponent,SimplecurdProduct,EmployeeListComponent,
     FilterPipe,TheSwitchComponent,DemoAttrComponents,HighlightDirective,TestPipes,
     ExponentialStrengthPipe,MsgComponent,AddChildComponent,AddsimpleComponent,
-    ConatctFormComponent,ModelContactComponent,ValidFormComponent,PersonComponent
+    ConatctFormComponent,ModelContactComponent,ValidFormComponent,
+    PersonComponent,CustomValidatorComp
   ],
   imports: [
     BrowserModule,
