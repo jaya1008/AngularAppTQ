@@ -49,7 +49,7 @@ export class HttpDemo
     const httpOptions = {
       params: new HttpParams().set("name", "Jayshree").set("limit", "25")
     };
-    this.http.get(url, httpOptions).subscribe(res => console.log(res));
+    this.http.get(url, httpOptions).subscribe(res =>console.log("this is res==>",res));
   }
 
   doPOST() {

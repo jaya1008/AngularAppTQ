@@ -30,6 +30,10 @@ import { ValidFormComponent } from './FormsDemos/validForm.component';
 import { PersonComponent } from './FormsDemos/Person.component';
 import { CustomValidatorComp } from './FormsDemos/CustomValidator/customvalid.component';
 import { HelloService } from './Services/Hello.service';
+import { HttpClientModule } from '@angular/common/http';
+import {ObservableDemo} from './Services/observabledemos/observabledemo1.component'
+import { ObserverdemoComp } from './Services/observabledemos/observerdemo2.component';
+import { HttpDemo } from './Services/observabledemos/httpclientdemo/httpdemo.component';
 @NgModule({
   declarations: [
     AppComponent,AtmComponent,LoginComponent,ProductComponentNew,StudentComponent
@@ -38,11 +42,11 @@ import { HelloService } from './Services/Hello.service';
     FilterPipe,TheSwitchComponent,DemoAttrComponents,HighlightDirective,TestPipes,
     ExponentialStrengthPipe,MsgComponent,AddChildComponent,AddsimpleComponent,
     ConatctFormComponent,ModelContactComponent,ValidFormComponent,
-    PersonComponent,CustomValidatorComp
+    PersonComponent,CustomValidatorComp,ObservableDemo,ObserverdemoComp,HttpDemo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,ReactiveFormsModule
+    AppRoutingModule,FormsModule,ReactiveFormsModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,12 +14,13 @@ export class ObservableDemo implements OnDestroy
   
     subscription: Subscription;
     
-  ngOnInit() {
+    ngOnInit() {
     this.observable = new Observable((observer: Observer<string>) => {
       this.observer = observer;
     });
     this.subscription=this.observable
       .subscribe(this.handleData, this.handleError , this.handleComplete);
+
 
     this.observer.next('12');
     this.observer.next('15');
@@ -27,14 +28,14 @@ export class ObservableDemo implements OnDestroy
     this.observer.error("An Error Occured!");
     this.observer.complete();
 
-    //RxJs operarator
+    //RxJs operarator 
 
-  //   const squareOf2 = of(1, 2, 3, 4, 5,6)
-  // .pipe(
-  //   filter(num => num % 2 === 0),
-  //   map(num => num * num)
-  // );
-  //  squareOf2.subscribe( (num) => console.log(num));
+    const squareOf2 = of(1, 2, 3, 4, 5,6)
+    .pipe(
+       filter(num => num % 2 === 0),
+      map(num => num * num)
+    );
+   squareOf2.subscribe( (num) => console.log(num));
   }
 
     handleData(data) {
