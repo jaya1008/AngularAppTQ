@@ -14,10 +14,8 @@ export class UserService
 {
     apiRoot:string = 'https://api.github.com/users';
     
-    constructor(private http:HttpClient)
-    {
-     
-    }
+    constructor(private http:HttpClient){}
+
    
     getUser() {
        

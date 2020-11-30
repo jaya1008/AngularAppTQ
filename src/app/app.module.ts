@@ -34,6 +34,17 @@ import { HttpClientModule } from '@angular/common/http';
 import {ObservableDemo} from './Services/observabledemos/observabledemo1.component'
 import { ObserverdemoComp } from './Services/observabledemos/observerdemo2.component';
 import { HttpDemo } from './Services/observabledemos/httpclientdemo/httpdemo.component';
+import { DemoUserComp } from './Services/ServiceUsingHttpClient/demo.component';
+//routing
+import { AboutHomeComponent } from './RoutingDemos/abouthome.component';
+import { AboutComponent } from './RoutingDemos/about.component';
+import { AboutItemComponent } from './RoutingDemos/aboutItem.component';
+import { MessagesComponent } from './RoutingDemos/Messages/messages.component';
+import { PhotosComponent } from './RoutingDemos/Photos/photos.component';
+import { NotFoundComponent } from './RoutingDemos/not-found.component';
+import { HomeComponent} from './RoutingDemos/home.component'
+
+
 @NgModule({
   declarations: [
     AppComponent,AtmComponent,LoginComponent,ProductComponentNew,StudentComponent
@@ -42,7 +53,8 @@ import { HttpDemo } from './Services/observabledemos/httpclientdemo/httpdemo.com
     FilterPipe,TheSwitchComponent,DemoAttrComponents,HighlightDirective,TestPipes,
     ExponentialStrengthPipe,MsgComponent,AddChildComponent,AddsimpleComponent,
     ConatctFormComponent,ModelContactComponent,ValidFormComponent,
-    PersonComponent,CustomValidatorComp,ObservableDemo,ObserverdemoComp,HttpDemo
+    PersonComponent,CustomValidatorComp,ObservableDemo,ObserverdemoComp,
+    HttpDemo,DemoUserComp,AboutHomeComponent,AboutComponent,AboutItemComponent,MessagesComponent,PhotosComponent,NotFoundComponent,HomeComponent
   ],
   imports: [
     BrowserModule,

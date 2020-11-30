@@ -21,7 +21,7 @@ export class DemoUserComp {
         .subscribe(resp => {
           console.log(resp, "res");
           this.data = resp
-          console.log(this.data);
+          console.log("Data =>",this.data);
         },
           error => {
             console.log(error, "error");
